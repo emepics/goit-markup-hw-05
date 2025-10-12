@@ -301,8 +301,10 @@ img {
   padding-top: 32px;
 }
 .socials-div {
-  padding: 32px 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 .socials {
   display: flex;
   gap: 24px;
@@ -318,7 +320,7 @@ img {
 .icon-link {
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
+  background-color: var(--icon-bg, #4d5ae5);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -326,7 +328,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-link {
+.icon-link:hover,
+.icon-link:focus {
   background-color: #404bbf;
 }
 
@@ -334,7 +337,6 @@ img {
   fill: #f4f4fd;
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 40px;
 }
 
 .socials-icon:hover {
