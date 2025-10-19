@@ -457,25 +457,31 @@
         <div class="footer-wrapper-form">
           <p class="footer-form-label">Subscribe</p>
           <form class="footer-form" name="subcscribe-form">
-            <div class="footer-subscribe-place">
+            <label
+              class="visually-hidden footer-subscribe-place"
+              for="footer-email"
+              name="label-footer-input"
+            >
               <input
                 type="email"
                 class="footer-input"
                 name="footer-user-email"
                 id="footer-email"
                 placeholder="E-mail"
-              />
-              <button class="hero-button footer-btn-input" type="submit">
-                Subscribe
-                <svg
-                  class="socials-icon button-icon-form"
-                  width="24"
-                  height="20"
-                >
-                  <use href="./images/icons.svg#send"></use>
-                </svg>
-              </button>
-            </div>
+            /></label>
+            <input
+              type="email"
+              class="footer-input"
+              name="footer-user-email"
+              id="footer-email"
+              placeholder="E-mail"
+            />
+            <button class="hero-button footer-btn-input" type="submit">
+              Subscribe
+              <svg class="socials-icon button-icon-form" width="24" height="20">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
