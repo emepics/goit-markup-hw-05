@@ -487,7 +487,7 @@
       </div>
     </footer>
     <!-- overlay -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="backdrop-btn">
           <svg class="close-icon" width="8" height="8">
@@ -499,10 +499,15 @@
         </p>
         <form class="backdrop-form" name="backdrop-form-info">
           <div class="input-wrapper">
-            <label for="name" class="label-form-input">Name</label>
+            <label for="user-name" class="label-form-input">Name</label>
             <div class="input-field">
-              <input type="text" id="name" class="inform-field" />
-              <svg class="input-icon" width="12" height="12">
+              <input
+                type="text"
+                id="user-name"
+                class="inform-field"
+                name="user-name"
+              />
+              <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#name"></use>
               </svg>
             </div>
@@ -511,7 +516,7 @@
             <label for="phone" class="label-form-input">Phone</label>
             <div class="input-field">
               <input type="tel" id="phone" class="inform-field" />
-              <svg class="input-icon" width="12" height="12">
+              <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </div>
@@ -520,17 +525,17 @@
             <label for="email" class="label-form-input">Email</label>
             <div class="input-field">
               <input type="email" id="email" class="inform-field" />
-              <svg class="input-icon" width="12" height="12">
+              <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </div>
           </div>
           <div class="input-wrapper">
-            <label for="textarea" class="label-form-input">Comment</label>
+            <label for="user-comment " class="label-form-input">Comment</label>
             <textarea
               class="modal-form-message"
-              name="textarea-backdrop"
-              id="textarea"
+              name="user-comment "
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -539,10 +544,11 @@
             <input
               class="visually-hidden"
               type="checkbox"
-              name="user-agreement"
-              id="user-agreement"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
             />
-            <label class="agreement-wrapper" for="user-agreement"
+            <label class="agreement-wrapper" for="user-privacy"
               ><span class="agreement-checkbox"
                 ><svg class="agreement-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#checkbox"></use></svg></span
