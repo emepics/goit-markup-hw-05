@@ -507,6 +507,7 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
+  width: 264px;
 }
 .footer-input::placeholder {
   color: #fff;
@@ -537,7 +538,12 @@ img {
   color: #fff;
   display: flex;
   align-items: center;
-  gap: 16px;
+
+  justify-content: center;
+}
+
+.button-icon-form {
+  margin-left: 16px;
 }
 
 /* #endregion */
@@ -624,6 +630,10 @@ img {
 
 .input-wrapper {
   margin-bottom: 8px;
+}
+
+.input-wrapper-last {
+  margin-bottom: 16px;
 }
 .label-form-input {
   font-family: "Roboto", sans-serif;
