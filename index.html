@@ -454,7 +454,96 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form" name="subcscribe-form">
+          <label class="footer-form-label" for="footer-email">Subscribe</label>
+          <div class="footer-subscribe-place">
+            <input
+              type="email"
+              class="footer-input"
+              name="footer-user-email"
+              id="footer-email"
+              placeholder="E-mail"
+            />
+            <button class="hero-button footer-btn-input" type="submit">
+              Subscribe
+              <svg class="socials-icon button-icon-form" width="24" height="20">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <!-- overlay -->
+    <div class="backdrop">
+      <div class="modal">
+        <button type="button" class="backdrop-btn">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="backdrop-descr">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="backdrop-form" name="backdrop-form-info">
+          <div class="input-wrapper">
+            <label for="name" class="label-form-input">Name</label>
+            <div class="input-field">
+              <input type="text" id="name" class="inform-field" />
+              <svg class="input-icon" width="12" height="12">
+                <use href="./images/icons.svg#name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="phone" class="label-form-input">Phone</label>
+            <div class="input-field">
+              <input type="tel" id="phone" class="inform-field" />
+              <svg class="input-icon" width="12" height="12">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="email" class="label-form-input">Email</label>
+            <div class="input-field">
+              <input type="email" id="email" class="inform-field" />
+              <svg class="input-icon" width="12" height="12">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <label for="textarea" class="label-form-input">Comment</label>
+            <textarea
+              class="modal-form-message"
+              name="textarea-backdrop"
+              id="textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="form-agreement">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user-agreement"
+              id="user-agreement"
+            />
+            <label class="agreement-wrapper" for="user-agreement"
+              ><span class="agreement-checkbox"
+                ><svg class="agreement-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#checkbox"></use></svg></span
+              >I accept the terms and conditions of the
+              <a class="accent-text" href="./index.html" target="_blank"
+                >Privacy Policy</a
+              ></label
+            >
+          </div>
+
+          <button class="hero-button modal-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
