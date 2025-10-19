@@ -660,7 +660,6 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: transparent;
   outline: transparent;
-  width: 264px;
 }
 .input-field {
   position: relative;
