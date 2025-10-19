@@ -456,12 +456,16 @@
         </div>
         <div class="footer-wrapper-form">
           <p class="footer-form-label">Subscribe</p>
-          <form class="footer-form" name="subcscribe-form">
+          <form class="footer-form">
             <label
               class="visually-hidden footer-subscribe-place"
               for="footer-email"
-              name="label-footer-input"
-            >
+              ><input
+                type="email"
+                class="footer-input"
+                name="footer-user-email"
+                id="footer-email"
+                placeholder="E-mail" />
               <input
                 type="email"
                 class="footer-input"
@@ -469,13 +473,7 @@
                 id="footer-email"
                 placeholder="E-mail"
             /></label>
-            <input
-              type="email"
-              class="footer-input"
-              name="footer-user-email"
-              id="footer-email"
-              placeholder="E-mail"
-            />
+
             <button class="hero-button footer-btn-input" type="submit">
               Subscribe
               <svg class="socials-icon button-icon-form" width="24" height="20">
@@ -515,7 +513,12 @@
           <div class="input-wrapper">
             <label for="phone" class="label-form-input">Phone</label>
             <div class="input-field">
-              <input type="tel" id="phone" class="inform-field" />
+              <input
+                type="tel"
+                id="phone"
+                class="inform-field"
+                name="user-phone"
+              />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
@@ -524,18 +527,24 @@
           <div class="input-wrapper">
             <label for="email" class="label-form-input">Email</label>
             <div class="input-field">
-              <input type="email" id="email" class="inform-field" />
+              <input
+                type="email"
+                id="email"
+                class="inform-field"
+                name="user-email"
+              />
               <svg class="input-icon" width="18" height="24">
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </div>
           </div>
           <div class="input-wrapper">
-            <label for="user-comment " class="label-form-input">Comment</label>
+            <label for="user-comment" class="label-form-input">Comment</label>
+            <label for="user-comment" class="label-form-input">Comment</label>
             <textarea
-              class="modal-form-message"
-              name="user-comment "
               id="user-comment"
+              name="user-comment"
+              class="modal-form-message"
               placeholder="Text input"
             ></textarea>
           </div>
